@@ -96,12 +96,27 @@
   </a-entity>
 
   <!-- ================= EARTH ================= -->
-  <a-torus radius="8" radius-tubular="0.02" rotation="90 0 0" color="white" opacity="0.35"></a-torus>
-  <a-entity animation="property: rotation; to: 0 360 0; dur: 8000; loop: true">
-    <a-sphere position="8 0 0" radius="0.5" material="src: #earth"
-      animation="property: rotation; to: 0 360 0; dur: 3000; loop: true">
+ <a-torus radius="8" radius-tubular="0.02" rotation="90 0 0" color="white" opacity="0.35"></a-torus>
+
+<a-entity animation="property: rotation; to: 0 360 0; dur: 8000; loop: true">
+
+  <!-- Earth -->
+  <a-sphere position="8 0 0" radius="0.5" material="src: #earth"
+    animation="property: rotation; to: 0 360 0; dur: 3000; loop: true">
+  </a-sphere>
+
+  <!-- Moon -->
+  <a-entity position="8 0 0"
+    animation="property: rotation; to: 0 360 0; dur: 2000; loop: true">
+
+    <a-sphere position="0.9 0 0" radius="0.12" color="#ccc"
+      animation="property: rotation; to: 0 360 0; dur: 1500; loop: true">
     </a-sphere>
+
   </a-entity>
+
+</a-entity>
+
 
   <!-- ================= MARS ================= -->
   <a-torus radius="10" radius-tubular="0.02" rotation="90 0 0" color="white" opacity="0.35"></a-torus>
@@ -159,6 +174,7 @@
 </html>
 
     
+
 
 
 
